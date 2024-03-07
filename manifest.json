@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "todo list extension",
+  "description": "a todo list extension",
+  "version": "1.0",
+  "action": {},
+  "permissions": ["sidePanel"],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}

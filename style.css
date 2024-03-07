@@ -1,0 +1,370 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #292534;
+  font-family: "Sono", sans-serif;
+  color: #fafaf9;
+  /* min-width: 907px; */
+}
+/* SIDE BAR */
+.greetting_task_number {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.greetting_task_number span {
+  color: rgb(255, 189, 8);
+}
+.label_completed span {
+  color: rgb(255, 189, 8);
+}
+.btn_filter {
+  margin-bottom: 30px;
+}
+
+.side_label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+/* FORM LAYOUT */
+.form_title {
+  display: flex;
+  flex-direction: column;
+}
+.form_title label {
+  font-size: 18px;
+}
+.color_picker_tag {
+  background-color: transparent !important;
+  width: 30px; /* Adjust to your preferred size */
+  height: 30px; /* Adjust to your preferred size */
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  cursor: pointer;
+}
+
+.color-input-container {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  appearance: none;
+  border: 2px solid #292534;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container_form input {
+  background-color: #9a93ac;
+  border: none;
+  padding: 16px;
+  font-size: 18px;
+  margin: 5px;
+  border-radius: 100px;
+  color: inherit;
+}
+.container_form input::placeholder {
+  color: #292534;
+}
+.new_task_form {
+  display: flex;
+  flex-direction: column;
+  background-color: #817995;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 1000px;
+  max-height: 500px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* form container */
+.container_form {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.tag_edit_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin: 0 auto 0 0;
+}
+
+/* <General button style> */
+.btn {
+  width: 200px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: inherit;
+  background-color: #413b51;
+}
+/*< General button style/> */
+
+.add_tag {
+  width: 50px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #6e697a;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.btn_add_task {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.new_task_button {
+  padding: 10px;
+  cursor: pointer;
+}
+/* .new_task_button:hover {
+} */
+
+/* MAIN LAYOUT */
+
+.app_container {
+  width: 90%;
+  margin: 0 auto;
+}
+.app_title {
+  text-align: center;
+  padding: 30px;
+}
+
+.sort_button {
+  list-style: none;
+  padding: 0 0 0 0;
+}
+.todo_Grid {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;
+  margin: 50px auto 0 0;
+}
+.input_deadline_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+}
+
+.deadline_date_span {
+  color: rgb(255, 46, 46);
+  cursor: pointer;
+  font-size: 0.75rem;
+  margin: 0 0 0 10px;
+}
+
+.deadline_date_span:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.deadline_label {
+  margin-left: 14px;
+  font-size: 18px;
+}
+
+.hide_input_deadline_date {
+  display: none;
+}
+.input_deadline_date {
+  background-color: #9a93ac;
+  border: none;
+  border-radius: 30px;
+  padding: 16px;
+}
+
+.hide_deadline_date {
+  display: none;
+}
+.edit_deadline_item {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.edit_deadline_item:hover {
+  filter: invert(74%) sepia(64%) saturate(1471%) hue-rotate(353deg)
+    brightness(100%) contrast(81%);
+}
+
+.hide_new_task_form {
+  display: none;
+}
+.todo_items,
+.todo_items li {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.main_inner_div_container_todo_item {
+  align-items: center;
+  max-width: 1000vmax;
+  min-width: 344px;
+}
+.container_todo_items {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+  letter-spacing: 1px;
+  padding: 10px;
+  min-width: 344px;
+}
+
+.delete_todo_item {
+  border: solid 2px white;
+  border-radius: 50%;
+  padding: 6px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.delete_todo_item:hover {
+  background-color: red;
+}
+
+.todo_item_info {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  margin: 0;
+}
+.todo_item_info h3 {
+  font-size: 16px;
+}
+.todo_items_list {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.sort_button li:first-child {
+  margin: 0 0 10px 0;
+}
+.sort_button li {
+  margin: 0 0 10px 0;
+}
+.btn_category {
+  width: 100%;
+}
+/* .todo_items li:hover {
+  border-top: goldenrod;
+  border-radius: 5px;
+} */
+.todo_LI {
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #413b51;
+  border-radius: 10px;
+}
+
+.todo_LI:first-child {
+  margin: 20px 0 20px 0;
+  /* faire attention: si on précise px sur une valeur il faut le faire pour les autres > 0 */
+}
+.todo_LI:hover {
+  /* background-color: #413b51; */
+}
+.todo_nav_bar li {
+  padding: 10px;
+}
+
+.todo_nav_bar li {
+  list-style: none;
+}
+.icon_tag {
+  margin-right: 5px;
+}
+
+.progress_bar {
+  width: 100%;
+  height: 20px;
+}
+.day_left_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.day_left_label span {
+  background-color: #292534;
+  color: rgb(250, 183, 0);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.tags_list {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 96px;
+}
+
+.tag_style {
+  margin: 8px;
+}
+.span_Tag {
+  font-size: 14px;
+  padding: 3px 10px 0 10px;
+  text-align: center;
+  text-align: justify;
+}
+
+.tag_container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.edit_tag:hover {
+  filter: invert(74%) sepia(64%) saturate(1471%) hue-rotate(353deg)
+    brightness(100%) contrast(81%);
+}
+
+.edit_tag_container:hover {
+}
+
+.hide_input_edit_tag {
+  display: none;
+}
+.deadline_container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.deadline_Update_Icon {
+  border: solid 1px white;
+  border-radius: 50%;
+}
+
+.deadline_Update_Icon:hover {
+  filter: invert(74%) sepia(64%) saturate(1471%) hue-rotate(353deg)
+    brightness(100%) contrast(81%);
+}
+
+.hide_update_icon {
+  display: none;
+}
+.status_container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

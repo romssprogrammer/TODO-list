@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app_container">
+      <div class="header">
+
+      </div>
+      <h1 class="app_title">My todo list</h1>
+      <button class="new_task_button btn">New task</button>
+    <div class="container_form hide_new_task_form">
+      <div class="new_task_form  id="Todo_form">
+        <div class="form_title">
+        <label for="">Title</label>
+        <input class="input_title" type="text" placeholder="Enter a Title" />
+      </div>
+        <input
+          class="input_description"
+          type="text"
+          placeholder="Description"
+        />
+        <label class="deadline_label" for="">Deadline</label>
+        <div class="input_deadline_container">
+          <input class="input_date" type="date" placeholder="Deadline " />
+        </div>
+        <div class="tag_edit_form">
+          <input class="tag_input" type="text" placeholder="enter a tag name" />
+        <div class="color-input-container">
+          <input type="color" class="color_picker_tag" value="#ff0000">
+        </div>
+          <button class="add_tag ">+</button>
+        </div>
+
+        <button class="btn_add_task btn">Add</button>
+      </div>
+    </div>
+  <main class="todo_Grid">
+    <div class="side_bar_container">
+      <h2 class="greetting_task_number">You have <span>10</span> <span class="task_word">task</span> </h2>
+      <ul class="sort_button">
+        <li><button class="btn btn_filter">Filter</button></li>
+        
+      <label class=" side_label label_completed">Completed <span>0</span></label>
+      <label class=" side_label label_completed">Archive <span>0</span></label>
+    </div>
+    <ul class="todo_items_list"></ul>
+      
+  </main>
+  </div>
+  </body>
+  <script defer src="todolist.js"></script>
+</html>
